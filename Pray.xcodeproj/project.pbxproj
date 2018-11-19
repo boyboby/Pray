@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EED596DE21A2C891003CFCDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED596DD21A2C891003CFCDB /* AppDelegate.swift */; };
+		EED596E021A2C891003CFCDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED596DF21A2C891003CFCDB /* ViewController.swift */; };
+		EED596E321A2C891003CFCDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED596E121A2C891003CFCDB /* Main.storyboard */; };
+		EED596E521A2C892003CFCDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED596E421A2C892003CFCDB /* Assets.xcassets */; };
+		EED596E821A2C892003CFCDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED596E621A2C892003CFCDB /* LaunchScreen.storyboard */; };
+		EED596F321A2C892003CFCDB /* PrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED596F221A2C892003CFCDB /* PrayTests.swift */; };
+		EED596FE21A2C892003CFCDB /* PrayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED596FD21A2C892003CFCDB /* PrayUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EED596EF21A2C892003CFCDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EED596D221A2C891003CFCDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EED596D921A2C891003CFCDB;
+			remoteInfo = Pray;
+		};
+		EED596FA21A2C892003CFCDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EED596D221A2C891003CFCDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EED596D921A2C891003CFCDB;
+			remoteInfo = Pray;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EED596DA21A2C891003CFCDB /* Pray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pray.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED596DD21A2C891003CFCDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EED596DF21A2C891003CFCDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EED596E221A2C891003CFCDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EED596E421A2C892003CFCDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EED596E721A2C892003CFCDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EED596E921A2C892003CFCDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED596EE21A2C892003CFCDB /* PrayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED596F221A2C892003CFCDB /* PrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayTests.swift; sourceTree = "<group>"; };
+		EED596F421A2C892003CFCDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED596F921A2C892003CFCDB /* PrayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED596FD21A2C892003CFCDB /* PrayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayUITests.swift; sourceTree = "<group>"; };
+		EED596FF21A2C892003CFCDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EED596D721A2C891003CFCDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED596EB21A2C892003CFCDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED596F621A2C892003CFCDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EED596D121A2C891003CFCDB = {
+			isa = PBXGroup;
+			children = (
+				EED596DC21A2C891003CFCDB /* Pray */,
+				EED596F121A2C892003CFCDB /* PrayTests */,
+				EED596FC21A2C892003CFCDB /* PrayUITests */,
+				EED596DB21A2C891003CFCDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EED596DB21A2C891003CFCDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EED596DA21A2C891003CFCDB /* Pray.app */,
+				EED596EE21A2C892003CFCDB /* PrayTests.xctest */,
+				EED596F921A2C892003CFCDB /* PrayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EED596DC21A2C891003CFCDB /* Pray */ = {
+			isa = PBXGroup;
+			children = (
+				EED596DD21A2C891003CFCDB /* AppDelegate.swift */,
+				EED596DF21A2C891003CFCDB /* ViewController.swift */,
+				EED596E121A2C891003CFCDB /* Main.storyboard */,
+				EED596E421A2C892003CFCDB /* Assets.xcassets */,
+				EED596E621A2C892003CFCDB /* LaunchScreen.storyboard */,
+				EED596E921A2C892003CFCDB /* Info.plist */,
+			);
+			path = Pray;
+			sourceTree = "<group>";
+		};
+		EED596F121A2C892003CFCDB /* PrayTests */ = {
+			isa = PBXGroup;
+			children = (
+				EED596F221A2C892003CFCDB /* PrayTests.swift */,
+				EED596F421A2C892003CFCDB /* Info.plist */,
+			);
+			path = PrayTests;
+			sourceTree = "<group>";
+		};
+		EED596FC21A2C892003CFCDB /* PrayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EED596FD21A2C892003CFCDB /* PrayUITests.swift */,
+				EED596FF21A2C892003CFCDB /* Info.plist */,
+			);
+			path = PrayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EED596D921A2C891003CFCDB /* Pray */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED5970221A2C892003CFCDB /* Build configuration list for PBXNativeTarget "Pray" */;
+			buildPhases = (
+				EED596D621A2C891003CFCDB /* Sources */,
+				EED596D721A2C891003CFCDB /* Frameworks */,
+				EED596D821A2C891003CFCDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pray;
+			productName = Pray;
+			productReference = EED596DA21A2C891003CFCDB /* Pray.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EED596ED21A2C892003CFCDB /* PrayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED5970521A2C892003CFCDB /* Build configuration list for PBXNativeTarget "PrayTests" */;
+			buildPhases = (
+				EED596EA21A2C892003CFCDB /* Sources */,
+				EED596EB21A2C892003CFCDB /* Frameworks */,
+				EED596EC21A2C892003CFCDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EED596F021A2C892003CFCDB /* PBXTargetDependency */,
+			);
+			name = PrayTests;
+			productName = PrayTests;
+			productReference = EED596EE21A2C892003CFCDB /* PrayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EED596F821A2C892003CFCDB /* PrayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED5970821A2C892003CFCDB /* Build configuration list for PBXNativeTarget "PrayUITests" */;
+			buildPhases = (
+				EED596F521A2C892003CFCDB /* Sources */,
+				EED596F621A2C892003CFCDB /* Frameworks */,
+				EED596F721A2C892003CFCDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EED596FB21A2C892003CFCDB /* PBXTargetDependency */,
+			);
+			name = PrayUITests;
+			productName = PrayUITests;
+			productReference = EED596F921A2C892003CFCDB /* PrayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EED596D221A2C891003CFCDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = PL;
+				TargetAttributes = {
+					EED596D921A2C891003CFCDB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EED596ED21A2C892003CFCDB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EED596D921A2C891003CFCDB;
+					};
+					EED596F821A2C892003CFCDB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EED596D921A2C891003CFCDB;
+					};
+				};
+			};
+			buildConfigurationList = EED596D521A2C891003CFCDB /* Build configuration list for PBXProject "Pray" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EED596D121A2C891003CFCDB;
+			productRefGroup = EED596DB21A2C891003CFCDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EED596D921A2C891003CFCDB /* Pray */,
+				EED596ED21A2C892003CFCDB /* PrayTests */,
+				EED596F821A2C892003CFCDB /* PrayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EED596D821A2C891003CFCDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED596E821A2C892003CFCDB /* LaunchScreen.storyboard in Resources */,
+				EED596E521A2C892003CFCDB /* Assets.xcassets in Resources */,
+				EED596E321A2C891003CFCDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED596EC21A2C892003CFCDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED596F721A2C892003CFCDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EED596D621A2C891003CFCDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED596E021A2C891003CFCDB /* ViewController.swift in Sources */,
+				EED596DE21A2C891003CFCDB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED596EA21A2C892003CFCDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED596F321A2C892003CFCDB /* PrayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED596F521A2C892003CFCDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED596FE21A2C892003CFCDB /* PrayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EED596F021A2C892003CFCDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EED596D921A2C891003CFCDB /* Pray */;
+			targetProxy = EED596EF21A2C892003CFCDB /* PBXContainerItemProxy */;
+		};
+		EED596FB21A2C892003CFCDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EED596D921A2C891003CFCDB /* Pray */;
+			targetProxy = EED596FA21A2C892003CFCDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EED596E121A2C891003CFCDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EED596E221A2C891003CFCDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EED596E621A2C892003CFCDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EED596E721A2C892003CFCDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EED5970021A2C892003CFCDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EED5970121A2C892003CFCDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EED5970321A2C892003CFCDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PK2W43GWT6;
+				INFOPLIST_FILE = Pray/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.163.boyboby.Pray;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EED5970421A2C892003CFCDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PK2W43GWT6;
+				INFOPLIST_FILE = Pray/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.163.boyboby.Pray;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EED5970621A2C892003CFCDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PK2W43GWT6;
+				INFOPLIST_FILE = PrayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.163.boyboby.PrayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pray.app/Pray";
+			};
+			name = Debug;
+		};
+		EED5970721A2C892003CFCDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PK2W43GWT6;
+				INFOPLIST_FILE = PrayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.163.boyboby.PrayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pray.app/Pray";
+			};
+			name = Release;
+		};
+		EED5970921A2C892003CFCDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PK2W43GWT6;
+				INFOPLIST_FILE = PrayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.163.boyboby.PrayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pray;
+			};
+			name = Debug;
+		};
+		EED5970A21A2C892003CFCDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PK2W43GWT6;
+				INFOPLIST_FILE = PrayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.163.boyboby.PrayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pray;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EED596D521A2C891003CFCDB /* Build configuration list for PBXProject "Pray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED5970021A2C892003CFCDB /* Debug */,
+				EED5970121A2C892003CFCDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED5970221A2C892003CFCDB /* Build configuration list for PBXNativeTarget "Pray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED5970321A2C892003CFCDB /* Debug */,
+				EED5970421A2C892003CFCDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED5970521A2C892003CFCDB /* Build configuration list for PBXNativeTarget "PrayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED5970621A2C892003CFCDB /* Debug */,
+				EED5970721A2C892003CFCDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED5970821A2C892003CFCDB /* Build configuration list for PBXNativeTarget "PrayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED5970921A2C892003CFCDB /* Debug */,
+				EED5970A21A2C892003CFCDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EED596D221A2C891003CFCDB /* Project object */;
+}
