@@ -14,6 +14,20 @@
 		EED596E821A2C892003CFCDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED596E621A2C892003CFCDB /* LaunchScreen.storyboard */; };
 		EED596F321A2C892003CFCDB /* PrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED596F221A2C892003CFCDB /* PrayTests.swift */; };
 		EED596FE21A2C892003CFCDB /* PrayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED596FD21A2C892003CFCDB /* PrayUITests.swift */; };
+		EED5971C21A2C8A8003CFCDB /* FluidTabBarItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5970C21A2C8A8003CFCDB /* FluidTabBarItemContentView.swift */; };
+		EED5971D21A2C8A8003CFCDB /* FluidTabBarItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5970D21A2C8A8003CFCDB /* FluidTabBarItemContainer.swift */; };
+		EED5971E21A2C8A8003CFCDB /* FluidTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5970E21A2C8A8003CFCDB /* FluidTabBarController.swift */; };
+		EED5971F21A2C8A8003CFCDB /* StretchyCircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5971121A2C8A8003CFCDB /* StretchyCircleLayer.swift */; };
+		EED5972021A2C8A8003CFCDB /* CurveLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5971221A2C8A8003CFCDB /* CurveLayer.swift */; };
+		EED5972121A2C8A8003CFCDB /* ContainerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5971321A2C8A8003CFCDB /* ContainerAnimator.swift */; };
+		EED5972221A2C8A8003CFCDB /* FluidTabBarItemAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5971421A2C8A8003CFCDB /* FluidTabBarItemAnimator.swift */; };
+		EED5972321A2C8A8003CFCDB /* TimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5971521A2C8A8003CFCDB /* TimingFunctions.swift */; };
+		EED5972421A2C8A8003CFCDB /* IconAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5971621A2C8A8003CFCDB /* IconAnimator.swift */; };
+		EED5972521A2C8A8003CFCDB /* LabelAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5971721A2C8A8003CFCDB /* LabelAnimator.swift */; };
+		EED5972621A2C8A8003CFCDB /* FluidTabBarItemAnimatorDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5971821A2C8A8003CFCDB /* FluidTabBarItemAnimatorDefault.swift */; };
+		EED5972721A2C8A8003CFCDB /* FluidTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5971921A2C8A8003CFCDB /* FluidTabBarItem.swift */; };
+		EED5972821A2C8A8003CFCDB /* FluidTabBarMoreItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5971A21A2C8A8003CFCDB /* FluidTabBarMoreItemContentView.swift */; };
+		EED5972921A2C8A8003CFCDB /* FluidTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5971B21A2C8A8003CFCDB /* FluidTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +61,20 @@
 		EED596F921A2C892003CFCDB /* PrayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED596FD21A2C892003CFCDB /* PrayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayUITests.swift; sourceTree = "<group>"; };
 		EED596FF21A2C892003CFCDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED5970C21A2C8A8003CFCDB /* FluidTabBarItemContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluidTabBarItemContentView.swift; sourceTree = "<group>"; };
+		EED5970D21A2C8A8003CFCDB /* FluidTabBarItemContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluidTabBarItemContainer.swift; sourceTree = "<group>"; };
+		EED5970E21A2C8A8003CFCDB /* FluidTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluidTabBarController.swift; sourceTree = "<group>"; };
+		EED5971121A2C8A8003CFCDB /* StretchyCircleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StretchyCircleLayer.swift; sourceTree = "<group>"; };
+		EED5971221A2C8A8003CFCDB /* CurveLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurveLayer.swift; sourceTree = "<group>"; };
+		EED5971321A2C8A8003CFCDB /* ContainerAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerAnimator.swift; sourceTree = "<group>"; };
+		EED5971421A2C8A8003CFCDB /* FluidTabBarItemAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluidTabBarItemAnimator.swift; sourceTree = "<group>"; };
+		EED5971521A2C8A8003CFCDB /* TimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimingFunctions.swift; sourceTree = "<group>"; };
+		EED5971621A2C8A8003CFCDB /* IconAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconAnimator.swift; sourceTree = "<group>"; };
+		EED5971721A2C8A8003CFCDB /* LabelAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelAnimator.swift; sourceTree = "<group>"; };
+		EED5971821A2C8A8003CFCDB /* FluidTabBarItemAnimatorDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluidTabBarItemAnimatorDefault.swift; sourceTree = "<group>"; };
+		EED5971921A2C8A8003CFCDB /* FluidTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluidTabBarItem.swift; sourceTree = "<group>"; };
+		EED5971A21A2C8A8003CFCDB /* FluidTabBarMoreItemContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluidTabBarMoreItemContentView.swift; sourceTree = "<group>"; };
+		EED5971B21A2C8A8003CFCDB /* FluidTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluidTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +105,7 @@
 		EED596D121A2C891003CFCDB = {
 			isa = PBXGroup;
 			children = (
+				EED5970B21A2C8A8003CFCDB /* FluidTabBarController */,
 				EED596DC21A2C891003CFCDB /* Pray */,
 				EED596F121A2C892003CFCDB /* PrayTests */,
 				EED596FC21A2C892003CFCDB /* PrayUITests */,
@@ -123,6 +152,43 @@
 				EED596FF21A2C892003CFCDB /* Info.plist */,
 			);
 			path = PrayUITests;
+			sourceTree = "<group>";
+		};
+		EED5970B21A2C8A8003CFCDB /* FluidTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				EED5970C21A2C8A8003CFCDB /* FluidTabBarItemContentView.swift */,
+				EED5970D21A2C8A8003CFCDB /* FluidTabBarItemContainer.swift */,
+				EED5970E21A2C8A8003CFCDB /* FluidTabBarController.swift */,
+				EED5970F21A2C8A8003CFCDB /* Animation */,
+				EED5971921A2C8A8003CFCDB /* FluidTabBarItem.swift */,
+				EED5971A21A2C8A8003CFCDB /* FluidTabBarMoreItemContentView.swift */,
+				EED5971B21A2C8A8003CFCDB /* FluidTabBar.swift */,
+			);
+			path = FluidTabBarController;
+			sourceTree = "<group>";
+		};
+		EED5970F21A2C8A8003CFCDB /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				EED5971021A2C8A8003CFCDB /* Layers */,
+				EED5971321A2C8A8003CFCDB /* ContainerAnimator.swift */,
+				EED5971421A2C8A8003CFCDB /* FluidTabBarItemAnimator.swift */,
+				EED5971521A2C8A8003CFCDB /* TimingFunctions.swift */,
+				EED5971621A2C8A8003CFCDB /* IconAnimator.swift */,
+				EED5971721A2C8A8003CFCDB /* LabelAnimator.swift */,
+				EED5971821A2C8A8003CFCDB /* FluidTabBarItemAnimatorDefault.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		EED5971021A2C8A8003CFCDB /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				EED5971121A2C8A8003CFCDB /* StretchyCircleLayer.swift */,
+				EED5971221A2C8A8003CFCDB /* CurveLayer.swift */,
+			);
+			path = Layers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +322,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED5972221A2C8A8003CFCDB /* FluidTabBarItemAnimator.swift in Sources */,
+				EED5972521A2C8A8003CFCDB /* LabelAnimator.swift in Sources */,
+				EED5972821A2C8A8003CFCDB /* FluidTabBarMoreItemContentView.swift in Sources */,
+				EED5972121A2C8A8003CFCDB /* ContainerAnimator.swift in Sources */,
 				EED596E021A2C891003CFCDB /* ViewController.swift in Sources */,
+				EED5972621A2C8A8003CFCDB /* FluidTabBarItemAnimatorDefault.swift in Sources */,
+				EED5972321A2C8A8003CFCDB /* TimingFunctions.swift in Sources */,
+				EED5972021A2C8A8003CFCDB /* CurveLayer.swift in Sources */,
+				EED5972721A2C8A8003CFCDB /* FluidTabBarItem.swift in Sources */,
+				EED5972421A2C8A8003CFCDB /* IconAnimator.swift in Sources */,
+				EED5971F21A2C8A8003CFCDB /* StretchyCircleLayer.swift in Sources */,
 				EED596DE21A2C891003CFCDB /* AppDelegate.swift in Sources */,
+				EED5972921A2C8A8003CFCDB /* FluidTabBar.swift in Sources */,
+				EED5971C21A2C8A8003CFCDB /* FluidTabBarItemContentView.swift in Sources */,
+				EED5971E21A2C8A8003CFCDB /* FluidTabBarController.swift in Sources */,
+				EED5971D21A2C8A8003CFCDB /* FluidTabBarItemContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
