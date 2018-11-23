@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +17,30 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_buddy" translatesAutoresizingMaskIntoConstraints="NO" id="GS4-8K-pHp">
+                                <rect key="frame" x="0.0" y="52" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GS4-8K-pHp" secondAttribute="height" multiplier="1:1" id="zs1-2j-Ldh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GS4-8K-pHp" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="375:647" id="8PZ-8k-upf"/>
+                            <constraint firstItem="GS4-8K-pHp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" priority="750" id="fZx-VG-nKU"/>
+                            <constraint firstItem="GS4-8K-pHp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="0.1" constant="50" id="vof-IZ-yek"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <size key="freeformSize" width="375" height="667"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-231.15942028985509" y="124.32065217391305"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_buddy" width="1024" height="1024"/>
+    </resources>
 </document>
