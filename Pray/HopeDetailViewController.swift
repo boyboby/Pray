@@ -1,16 +1,14 @@
 //
-//  HopeViewController.swift
+//  HopeDetailViewController.swift
 //  Pray
 //
-//  Created by 潘磊 on 2018/11/22.
+//  Created by 潘磊 on 2018/12/20.
 //  Copyright © 2018 PL. All rights reserved.
 //
 
 import UIKit
 
-class HopeViewController: UITableViewController {
-    
-    var hopes:[Hope] = hopesData
+class HopeDetailViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,33 +24,24 @@ class HopeViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-//        return 0
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-//        return 0
-        return hopes.count
+        return 0
     }
 
     
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HopeCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        let hope = hopes[indexPath.row] as Hope
-        cell.textLabel?.text = hope.name
-        cell.detailTextLabel?.text = hope.desc
+        // Configure the cell...
 
         return cell
     }
-    
-    @IBAction func closeHopeDetailView(segue:UIStoryboardSegue){
-//        dismiss(animated: true, completion: nil)
-        print("关闭")
-        
-    }
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -100,4 +89,3 @@ class HopeViewController: UITableViewController {
     */
 
 }
-

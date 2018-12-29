@@ -6,4 +6,15 @@
 //  Copyright © 2018 PL. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class Hope:NSObject{
+    var name: String
+    var desc: String
+    
+    init(name:String,desc:String){
+        self.name = name
+        self.desc = desc
+        super.init()
+    }
+}
