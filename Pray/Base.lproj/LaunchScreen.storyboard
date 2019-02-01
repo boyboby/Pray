@@ -18,18 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_buddy" translatesAutoresizingMaskIntoConstraints="NO" id="GS4-8K-pHp">
-                                <rect key="frame" x="0.0" y="52" width="375" height="375"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="GS4-8K-pHp" secondAttribute="height" multiplier="1:1" id="zs1-2j-Ldh"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="open" translatesAutoresizingMaskIntoConstraints="NO" id="JSk-43-bnT">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="GS4-8K-pHp" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="375:647" id="8PZ-8k-upf"/>
-                            <constraint firstItem="GS4-8K-pHp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" priority="750" id="fZx-VG-nKU"/>
-                            <constraint firstItem="GS4-8K-pHp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="0.1" constant="50" id="vof-IZ-yek"/>
+                            <constraint firstItem="JSk-43-bnT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2yl-ru-oQE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JSk-43-bnT" secondAttribute="bottom" id="V3x-Kh-Q0I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JSk-43-bnT" secondAttribute="trailing" id="bkh-LW-3l1"/>
+                            <constraint firstItem="JSk-43-bnT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="df5-LH-OuR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -41,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_buddy" width="1024" height="1024"/>
+        <image name="open" width="1242" height="1845"/>
     </resources>
 </document>

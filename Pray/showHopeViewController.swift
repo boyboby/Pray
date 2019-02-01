@@ -10,21 +10,18 @@ import UIKit
 
 class showHopeViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var prayDisplay: UILabel!
+    @IBAction func clickPrayButton(_ sender: UIButton) {
+        let buttonName = sender.currentTitle!
+        print("click \(String(describing: buttonName)) button")
+        let textprayDisplay = prayDisplay!.text!
+        var intPrayDisplay = Int(textprayDisplay)!
+        intPrayDisplay += 1
+        print("intPrayDisplay:\(intPrayDisplay)")
+        prayDisplay!.text = String(intPrayDisplay)
+        print("prayDisplay's text:\(String(describing: prayDisplay!.text ))")
+        
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
