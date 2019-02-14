@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE08ED5B21DCBD9B00A62B43 /* MyHope.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08ED5A21DCBD9B00A62B43 /* MyHope.swift */; };
-		EE08ED5D21DCC75B00A62B43 /* MyHopeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08ED5C21DCC75B00A62B43 /* MyHopeData.swift */; };
+		DCFF8FC92211609C005B381C /* MyPrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFF8FC82211609C005B381C /* MyPrayViewController.swift */; };
+		EE08ED5B21DCBD9B00A62B43 /* MyPray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08ED5A21DCBD9B00A62B43 /* MyPray.swift */; };
+		EE08ED5D21DCC75B00A62B43 /* MyParyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE08ED5C21DCC75B00A62B43 /* MyParyData.swift */; };
 		EE2EAD5921D761E7006B89C7 /* showHopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2EAD5821D761E7006B89C7 /* showHopeViewController.swift */; };
 		EE8DBC8621A65008005DC8BD /* HopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8DBC8521A65008005DC8BD /* HopeViewController.swift */; };
 		EED596DE21A2C891003CFCDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED596DD21A2C891003CFCDB /* AppDelegate.swift */; };
@@ -54,8 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EE08ED5A21DCBD9B00A62B43 /* MyHope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHope.swift; sourceTree = "<group>"; };
-		EE08ED5C21DCC75B00A62B43 /* MyHopeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHopeData.swift; sourceTree = "<group>"; };
+		DCFF8FC82211609C005B381C /* MyPrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPrayViewController.swift; sourceTree = "<group>"; };
+		EE08ED5A21DCBD9B00A62B43 /* MyPray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPray.swift; sourceTree = "<group>"; };
+		EE08ED5C21DCC75B00A62B43 /* MyParyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyParyData.swift; sourceTree = "<group>"; };
 		EE2EAD5821D761E7006B89C7 /* showHopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showHopeViewController.swift; sourceTree = "<group>"; };
 		EE8DBC8521A65008005DC8BD /* HopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopeViewController.swift; sourceTree = "<group>"; };
 		EED596DA21A2C891003CFCDB /* Pray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pray.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,8 +150,9 @@
 				EED596E621A2C892003CFCDB /* LaunchScreen.storyboard */,
 				EED596E421A2C892003CFCDB /* Assets.xcassets */,
 				EED596E921A2C892003CFCDB /* Info.plist */,
-				EE08ED5A21DCBD9B00A62B43 /* MyHope.swift */,
-				EE08ED5C21DCC75B00A62B43 /* MyHopeData.swift */,
+				EE08ED5A21DCBD9B00A62B43 /* MyPray.swift */,
+				EE08ED5C21DCC75B00A62B43 /* MyParyData.swift */,
+				DCFF8FC82211609C005B381C /* MyPrayViewController.swift */,
 			);
 			path = Pray;
 			sourceTree = "<group>";
@@ -340,10 +343,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCFF8FC92211609C005B381C /* MyPrayViewController.swift in Sources */,
 				EE8DBC8621A65008005DC8BD /* HopeViewController.swift in Sources */,
 				EED5972221A2C8A8003CFCDB /* FluidTabBarItemAnimator.swift in Sources */,
 				EED5972521A2C8A8003CFCDB /* LabelAnimator.swift in Sources */,
-				EE08ED5D21DCC75B00A62B43 /* MyHopeData.swift in Sources */,
+				EE08ED5D21DCC75B00A62B43 /* MyParyData.swift in Sources */,
 				EED5972821A2C8A8003CFCDB /* FluidTabBarMoreItemContentView.swift in Sources */,
 				EED5972121A2C8A8003CFCDB /* ContainerAnimator.swift in Sources */,
 				EED596E021A2C891003CFCDB /* ViewController.swift in Sources */,
@@ -355,7 +359,7 @@
 				EED5971F21A2C8A8003CFCDB /* StretchyCircleLayer.swift in Sources */,
 				EED596DE21A2C891003CFCDB /* AppDelegate.swift in Sources */,
 				EED5972921A2C8A8003CFCDB /* FluidTabBar.swift in Sources */,
-				EE08ED5B21DCBD9B00A62B43 /* MyHope.swift in Sources */,
+				EE08ED5B21DCBD9B00A62B43 /* MyPray.swift in Sources */,
 				EED5971C21A2C8A8003CFCDB /* FluidTabBarItemContentView.swift in Sources */,
 				EEF3016E21CB2BC200BF2025 /* HopeData.swift in Sources */,
 				EEF3016C21CA5C7500BF2025 /* Hope.swift in Sources */,

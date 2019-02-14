@@ -9,6 +9,6 @@
 import Foundation
 
 let hopesData = [
-    Hope(name:"求财运",desc:"为发财祈福"),
-    Hope(name: "求姻缘", desc: "向月老祈福")
+    Hope(label:"prayWealth",name:"求财运",desc:"为发财祈福"),
+    Hope(label:"prayWedding",name: "求姻缘", desc: "向月老祈福")
 ]

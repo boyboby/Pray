@@ -1,5 +1,5 @@
 //
-//  MyHopeData.swift
+//  MyPrayData.swift
 //  Pray
 //
 //  Created by 潘磊 on 2019/1/2.
@@ -8,18 +8,18 @@
 
 import Foundation
 
-class MyHopeData:NSObject{
+class MyPrayData:NSObject{
 //    var name: String
 //    var wishes: Int
 //    var days:Int
-//    var hopeNum:Int
+//    var PrayNum:Int
     
     
     override init(){
         super.init()
     }
     
-    func doHope(name:String){
+    func doPray(name:String){
         _ = Date()
         _ = Date()
         

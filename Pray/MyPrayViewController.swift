@@ -1,17 +1,16 @@
 //
-//  HopeViewController.swift
+//  MyPrayViewController.swift
 //  Pray
 //
-//  Created by 潘磊 on 2018/11/22.
-//  Copyright © 2018 PL. All rights reserved.
+//  Created by Felix on 2019/2/11.
+//  Copyright © 2019 PL. All rights reserved.
 //
 
 import UIKit
 
-class HopeViewController: UITableViewController {
+class MyPrayViewController: UITableViewController {
     
-    var hopes:[Hope] = hopesData
-  
+    var myPrays:[String] = ["求财","求平安"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,41 +24,29 @@ class HopeViewController: UITableViewController {
     
     // MARK: - Table view data source
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        //        return 0
-        return 1
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 1
+//    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        //        return 0
-        return hopes.count
+        return myPrays.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HopeCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyPrayCell", for: indexPath)
+        let myPray = myPrays[indexPath.row]
+        cell.textLabel?.text = myPray
+        cell.detailTextLabel?.text = myPray
         
-        let hope = hopes[indexPath.row] as Hope
-        cell.textLabel?.text = hope.name
-        cell.detailTextLabel?.text = hope.desc
-        cell.imageView?.accessibilityIdentifier = hope.name
+        // Configure the cell...
         
         return cell
     }
     
-    @IBAction func closeHopeDetailView(segue:UIStoryboardSegue){
-        //        dismiss(animated: true, completion: nil)
-        print("关闭")
-        
-    }
     
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        selectPray = hopes[indexPath.row].label
-//        selectedPrayIndex = indexPath.row
-//        print("when select:indexpath:\(indexPath.row)")
-//    }
     /*
      // Override to support conditional editing of the table view.
      override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -95,21 +82,14 @@ class HopeViewController: UITableViewController {
      }
      */
     
-   
+    /*
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destination.
      // Pass the selected object to the new view controller.
-        if segue.identifier! == "ShowHope"{
-            let showHopeView = segue.destination as! showHopeViewController
-            showHopeView.prayType = hopes[tableView.indexPathForSelectedRow!.row].label
-            print("when prepare,selectPray:\(showHopeView.prayType)")
-        }
      }
-
-
+     */
     
 }
-
