@@ -51,7 +51,6 @@ class HopeViewController: UITableViewController {
     
     @IBAction func closeHopeDetailView(segue:UIStoryboardSegue){
         //        dismiss(animated: true, completion: nil)
-        print("关闭")
         
     }
     
@@ -106,6 +105,7 @@ class HopeViewController: UITableViewController {
             let showHopeView = segue.destination as! showHopeViewController
             showHopeView.prayType = hopes[tableView.indexPathForSelectedRow!.row].label
             print("when prepare,selectPray:\(showHopeView.prayType)")
+            
         }
      }
 

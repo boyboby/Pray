@@ -86,12 +86,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhaogongming" translatesAutoresizingMaskIntoConstraints="NO" id="GqP-lS-gP3">
-                                <rect key="frame" x="0.0" y="64" width="414" height="583"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="prayImage" image="zhaogongming" translatesAutoresizingMaskIntoConstraints="NO" id="GqP-lS-gP3">
+                                <rect key="frame" x="0.0" y="20" width="414" height="627"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCJ-vn-ZWr">
-                                <rect key="frame" x="168" y="647" width="78" height="40"/>
-                                <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="26"/>
+                                <rect key="frame" x="165.66666666666666" y="647" width="83" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="🙏祈祷">
                                     <color key="titleColor" red="0.92550259828567505" green="0.22720151790531154" blue="0.047845326280292678" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" red="1" green="0.70331154199478541" blue="0.3385416188205389" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -108,20 +108,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="次" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72E-Dg-ym9">
-                                <rect key="frame" x="354" y="94" width="20" height="28"/>
-                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                                <rect key="frame" x="354" y="50" width="20" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="祈福" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJw-eR-Jwp">
-                                <rect key="frame" x="292" y="94" width="40" height="28"/>
-                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                                <rect key="frame" x="291" y="50" width="41" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvm-7V-6eV">
-                                <rect key="frame" x="337" y="94" width="12" height="28"/>
-                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvm-7V-6eV">
+                                <rect key="frame" x="337" y="50" width="12" height="24"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -159,6 +159,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="prayDisplay" destination="bvm-7V-6eV" id="4Og-Ez-gKe"/>
+                        <outlet property="prayImage" destination="GqP-lS-gP3" id="IlB-38-b1g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PD4-um-Vfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,6 +256,6 @@
         <image name="zhaogongming" width="450" height="597"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xkp-SA-DSl"/>
+        <segue reference="FhC-N5-7Kp"/>
     </inferredMetricsTieBreakers>
 </document>

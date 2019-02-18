@@ -9,8 +9,15 @@
 import UIKit
 
 class showHopeViewController: UIViewController {
+    var prayType = "zhaogongming"
     
     @IBOutlet weak var prayDisplay: UILabel!
+    
+    @IBOutlet weak var prayImage: UIImageView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        prayImage.image = UIImage(named: prayType)
+    }
     
     var prayNum : Int{
         get{
@@ -20,19 +27,18 @@ class showHopeViewController: UIViewController {
             prayDisplay.text = String(newValue)
         }
     }
+
     
-    var prayType = "prayWealth"
+    
     
     @IBAction func clickPrayButton(_ sender: UIButton) {
         let buttonName = sender.currentTitle!
         print("click \(String(describing: buttonName)) button")
-
+        
         prayNum += 1
         
         print("prayNum:\(prayNum)")
-        
         print("prayDisplay's text:\(String(describing: prayDisplay!.text ))")
-        
         print("selectPray is :\(self.prayType)")
         
         
