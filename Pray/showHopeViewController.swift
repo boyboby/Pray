@@ -19,14 +19,6 @@ class showHopeViewController: UIViewController {
     
     @IBOutlet weak var prayImage: UIImageView!
     
-    override func viewDidLoad() {
-        print("in showHopeViewController begin pray view load")
-        super.viewDidLoad()
-        // 从 userDefaults 里查询数据
-        
-        prayImage.image = UIImage(named: prayType)
-    }
-    
     var prayNum : Int{
         get{
             return Int(prayDisplay.text!)!
@@ -37,7 +29,17 @@ class showHopeViewController: UIViewController {
     }
     
     
+    override func viewDidLoad() {
+        print("in showHopeViewController begin pray view load")
+        super.viewDidLoad()
+        // 从 userDefaults 里查询数据
+        
+    }
     
+    override func viewDidAppear(_ animated: Bool) {
+        print("in showHopeViewController begin pray view appear")
+        prayImage.image = UIImage(named: prayType)
+    }
     
     @IBAction func clickPrayButton(_ sender: UIButton) {
         print("in showHopeViewController begin pray view load")
@@ -50,6 +52,12 @@ class showHopeViewController: UIViewController {
         print("prayDisplay's text:\(String(describing: prayDisplay!.text ))")
         print("selectPray is :\(self.prayType)")
         
+        let userDefaults: UserDefaults = UserDefaults.standard
+        
+        userDefaults.set(prayNum, forKey: String(prayType)+"Num")
+        
+        // 同步数据，把数据持久化到 standardUserDefaults 数据库
+        userDefaults.synchronize()
         
     }
     
