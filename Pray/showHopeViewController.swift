@@ -9,13 +9,21 @@
 import UIKit
 
 class showHopeViewController: UIViewController {
-    var prayType = "zhaogongming"
+    var prayType :String{
+        get{
+            return userDefaults.object(forKey: "PrayType") as! String
+        }
+    }
     
     @IBOutlet weak var prayDisplay: UILabel!
     
     @IBOutlet weak var prayImage: UIImageView!
+    
     override func viewDidLoad() {
+        print("in showHopeViewController begin pray view load")
         super.viewDidLoad()
+        // 从 userDefaults 里查询数据
+        
         prayImage.image = UIImage(named: prayType)
     }
     
@@ -27,11 +35,12 @@ class showHopeViewController: UIViewController {
             prayDisplay.text = String(newValue)
         }
     }
-
+    
     
     
     
     @IBAction func clickPrayButton(_ sender: UIButton) {
+        print("in showHopeViewController begin pray view load")
         let buttonName = sender.currentTitle!
         print("click \(String(describing: buttonName)) button")
         

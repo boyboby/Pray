@@ -11,7 +11,7 @@ import UIKit
 class HopeViewController: UITableViewController {
     
     var hopes:[Hope] = hopesData
-  
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,11 +54,11 @@ class HopeViewController: UITableViewController {
         
     }
     
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        selectPray = hopes[indexPath.row].label
-//        selectedPrayIndex = indexPath.row
-//        print("when select:indexpath:\(indexPath.row)")
-//    }
+    //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //        selectPray = hopes[indexPath.row].label
+    //        selectedPrayIndex = indexPath.row
+    //        print("when select:indexpath:\(indexPath.row)")
+    //    }
     /*
      // Override to support conditional editing of the table view.
      override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -94,22 +94,30 @@ class HopeViewController: UITableViewController {
      }
      */
     
-   
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
         if segue.identifier! == "ShowHope"{
-            let showHopeView = segue.destination as! showHopeViewController
-            showHopeView.prayType = hopes[tableView.indexPathForSelectedRow!.row].label
-            print("when prepare,selectPray:\(showHopeView.prayType)")
+//            let showHopeView = segue.destination as! showHopeViewController
+//            showHopeView.prayType = hopes[tableView.indexPathForSelectedRow!.row].label
+//            print("when prepare,selectPray:\(showHopeView.prayType)")
+            
+            let userDefaults: UserDefaults = UserDefaults.standard
+            
+            
+            userDefaults.set(hopes[tableView.indexPathForSelectedRow!.row].label, forKey: "PrayType")
+            
+            // 同步数据，把数据持久化到 standardUserDefaults 数据库
+            userDefaults.synchronize()
+            
             
         }
-     }
-
-
+        
+    }
     
 }
 

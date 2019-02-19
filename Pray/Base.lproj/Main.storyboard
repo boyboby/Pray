@@ -87,7 +87,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="prayImage" image="zhaogongming" translatesAutoresizingMaskIntoConstraints="NO" id="GqP-lS-gP3">
-                                <rect key="frame" x="0.0" y="20" width="414" height="627"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="583"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCJ-vn-ZWr">
                                 <rect key="frame" x="165.66666666666666" y="647" width="83" height="40"/>
@@ -100,27 +100,26 @@
                                     <action selector="clickPrayButton:" destination="OwW-JE-bcU" eventType="touchUpInside" id="L5W-mI-cju"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgi-t3-i1X">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgi-t3-i1X">
                                 <rect key="frame" x="300" y="49" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="次" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72E-Dg-ym9">
-                                <rect key="frame" x="354" y="50" width="20" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="次" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72E-Dg-ym9">
+                                <rect key="frame" x="354" y="94" width="20" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="祈福" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJw-eR-Jwp">
-                                <rect key="frame" x="291" y="50" width="41" height="24"/>
+                                <rect key="frame" x="288" y="94" width="41" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvm-7V-6eV">
-                                <rect key="frame" x="337" y="50" width="12" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvm-7V-6eV">
+                                <rect key="frame" x="337" y="94" width="12" height="24"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -128,19 +127,23 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bvm-7V-6eV" firstAttribute="leading" secondItem="lJw-eR-Jwp" secondAttribute="trailing" constant="5" id="1kD-6X-XjH"/>
+                            <constraint firstItem="bvm-7V-6eV" firstAttribute="leading" secondItem="lJw-eR-Jwp" secondAttribute="trailing" constant="8" symbolic="YES" id="1kD-6X-XjH"/>
                             <constraint firstItem="GqP-lS-gP3" firstAttribute="leading" secondItem="Znp-vE-0hr" secondAttribute="leading" id="3OQ-ol-7gL"/>
                             <constraint firstItem="lJw-eR-Jwp" firstAttribute="top" secondItem="Znp-vE-0hr" secondAttribute="top" constant="30" id="6pC-KE-xg2"/>
                             <constraint firstItem="Znp-vE-0hr" firstAttribute="bottom" secondItem="GqP-lS-gP3" secondAttribute="bottom" constant="40" id="D2p-19-cTf"/>
                             <constraint firstItem="Znp-vE-0hr" firstAttribute="trailing" secondItem="72E-Dg-ym9" secondAttribute="trailing" constant="40" id="DFR-8i-rje"/>
+                            <constraint firstItem="cgi-t3-i1X" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fZM-gc-Qbw" secondAttribute="leading" constant="20" symbolic="YES" id="FM7-Hz-TNZ"/>
                             <constraint firstItem="TCJ-vn-ZWr" firstAttribute="centerX" secondItem="fZM-gc-Qbw" secondAttribute="centerX" id="HLf-UI-guy"/>
                             <constraint firstItem="72E-Dg-ym9" firstAttribute="leading" secondItem="bvm-7V-6eV" secondAttribute="trailing" constant="5" id="N88-Go-Auq"/>
+                            <constraint firstItem="lJw-eR-Jwp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Znp-vE-0hr" secondAttribute="leading" symbolic="YES" id="RG4-NW-Ipi"/>
                             <constraint firstItem="Znp-vE-0hr" firstAttribute="bottom" secondItem="TCJ-vn-ZWr" secondAttribute="bottom" id="TCs-vS-ctp"/>
                             <constraint firstItem="GqP-lS-gP3" firstAttribute="top" secondItem="Znp-vE-0hr" secondAttribute="top" id="a87-we-2QV"/>
                             <constraint firstItem="GqP-lS-gP3" firstAttribute="trailing" secondItem="Znp-vE-0hr" secondAttribute="trailing" id="aPk-Gg-kUz"/>
                             <constraint firstItem="bvm-7V-6eV" firstAttribute="top" secondItem="Znp-vE-0hr" secondAttribute="top" constant="30" id="gfi-v0-x7U"/>
                             <constraint firstItem="TCJ-vn-ZWr" firstAttribute="top" secondItem="GqP-lS-gP3" secondAttribute="bottom" id="hA1-Ex-79Y"/>
+                            <constraint firstItem="cgi-t3-i1X" firstAttribute="top" secondItem="fZM-gc-Qbw" secondAttribute="topMargin" constant="-15" id="j75-bH-cnL"/>
                             <constraint firstItem="72E-Dg-ym9" firstAttribute="top" secondItem="Znp-vE-0hr" secondAttribute="top" constant="30" id="mRz-BM-Wli"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cgi-t3-i1X" secondAttribute="trailing" constant="94" id="orY-Tx-dZt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Znp-vE-0hr"/>
                     </view>
@@ -232,7 +235,7 @@
         <!--TabBarController-->
         <scene sceneID="8Zw-Fe-OyZ">
             <objects>
-                <tabBarController title="TabBarController" id="1GI-K6-62g" sceneMemberID="viewController">
+                <tabBarController title="TabBarController" id="1GI-K6-62g" customClass="TabBarViewController" customModule="Pray" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ytu-Ya-a0J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -256,6 +259,6 @@
         <image name="zhaogongming" width="450" height="597"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FhC-N5-7Kp"/>
+        <segue reference="xkp-SA-DSl"/>
     </inferredMetricsTieBreakers>
 </document>
