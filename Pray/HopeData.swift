@@ -9,6 +9,17 @@
 import Foundation
 
 let hopesData = [
-    Hope(label:"zhaogongming",name:"求财运",desc:"为发财祈福"),
-    Hope(label:"yuelao",name: "求姻缘", desc: "向月老祈福")
+    Hope(label:HopeKeys.zhaogongming.rawValue,name:"求财运",desc:"向财神祈福"),
+    Hope(label:HopeKeys.yuelao.rawValue,name: "求姻缘", desc: "向月老祈福"),
+    Hope(label:HopeKeys.guanyin.rawValue,name: "求子", desc: "向观音祈福"),
+    Hope(label:HopeKeys.puxian.rawValue,name: "求仕途", desc: "向普贤菩萨祈福"),
+    Hope(label:HopeKeys.yaoshifo.rawValue,name: "求健康", desc: "向药师佛祈福"),
 ]
+
+enum HopeKeys: String{
+    case zhaogongming
+    case yuelao
+    case guanyin
+    case puxian
+    case yaoshifo
+}

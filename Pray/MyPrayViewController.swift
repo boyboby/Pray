@@ -10,8 +10,6 @@ import UIKit
 
 class MyPrayViewController: UITableViewController {
     
-    var myPrays:[String] = ["求财","求平安"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,13 +29,13 @@ class MyPrayViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return myPrays.count
+        return hopesData.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyPrayCell", for: indexPath)
-        let myPray = myPrays[indexPath.row]
+        let myPray = hopesData[indexPath.row].name
         cell.textLabel?.text = myPray
         cell.detailTextLabel?.text = myPray
         
