@@ -39,15 +39,28 @@ class MyPrayViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyPrayCell", for: indexPath)
         let myPray = hopesData[indexPath.row].name
-        let myPrayNum  = hopesData[indexPath.row].count
         cell.textLabel?.text = myPray
-        cell.detailTextLabel?.text = String(myPrayNum)
         
-        
+        let prayType = hopesData[indexPath.row].label
+        let userDefaults: UserDefaults = UserDefaults.standard
+        let iPrayNum = userDefaults.integer(forKey: String(prayType)+"Num")
+    
+        cell.detailTextLabel?.text = "祈福次数：\(iPrayNum)"
         // Configure the cell...
         
         return cell
     }
+    
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "HopeCell", for: indexPath)
+//
+//        let hope = hopes[indexPath.row] as Hope
+//        cell.textLabel?.text = hope.name
+//        cell.detailTextLabel?.text = hope.desc
+//        cell.imageView?.accessibilityIdentifier = hope.name
+//
+//        return cell
+//    }
     
     
     
@@ -86,14 +99,29 @@ class MyPrayViewController: UITableViewController {
      }
      */
     
-    /*
+    
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destination.
      // Pass the selected object to the new view controller.
+        if segue.identifier! == "myPraytoPray"{
+            //            let showHopeView = segue.destination as! showHopeViewController
+            //            showHopeView.prayType = hopes[tableView.indexPathForSelectedRow!.row].label
+            //            print("when prepare,selectPray:\(showHopeView.prayType)")
+            
+            let userDefaults: UserDefaults = UserDefaults.standard
+            
+            
+            userDefaults.set(hopesData[tableView.indexPathForSelectedRow!.row].label, forKey: "PrayType")
+            
+            // 同步数据，把数据持久化到 standardUserDefaults 数据库
+            userDefaults.synchronize()
+            
+            
+        }
      }
-     */
+    
     
 }

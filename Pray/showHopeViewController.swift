@@ -11,7 +11,7 @@ import UIKit
 class showHopeViewController: UIViewController {
     var prayType :String{
         get{
-            return userDefaults.object(forKey: "PrayType") as! String
+            return userDefaults.string(forKey: "PrayType")!
         }
     }
     
@@ -30,7 +30,7 @@ class showHopeViewController: UIViewController {
     
     
     override func viewDidLoad() {
-//        print("in showHopeViewController begin pray view load")
+        
         super.viewDidLoad()
         // 从 userDefaults 里查询数据
         prayImage.image = UIImage(named: prayType)
@@ -38,10 +38,10 @@ class showHopeViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-//        print("in showHopeViewController begin pray view appear")
+        //        print("in showHopeViewController begin pray view appear")
         prayImage.image = UIImage(named: prayType)
-//        print("in viewDidAppear:praytype:\(prayType)")
-//        print("praytypenum:\(String(prayType)+"Num")")
+        //        print("in viewDidAppear:praytype:\(prayType)")
+        //        print("praytypenum:\(String(prayType)+"Num")")
         
         //let userDefaults: UserDefaults = UserDefaults.standard
         let iPrayNum = userDefaults.integer(forKey: String(prayType)+"Num")
@@ -50,20 +50,20 @@ class showHopeViewController: UIViewController {
     }
     
     @IBAction func returnBack(_ sender: UIButton) {
-//        self.presentedViewController?.dismiss(animated: true, completion: nil)
+        //        self.presentedViewController?.dismiss(animated: true, completion: nil)
         self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func clickPrayButton(_ sender: UIButton) {
-//        print("in showHopeViewController begin pray view load")
-//        let buttonName = sender.currentTitle!
-//        print("click \(String(describing: buttonName)) button")
+        //        print("in showHopeViewController begin pray view load")
+        //        let buttonName = sender.currentTitle!
+        //        print("click \(String(describing: buttonName)) button")
         
         prayNum += 1
-    
-//        print("prayNum:\(prayNum)")
-//        print("prayDisplay's text:\(String(describing: prayDisplay!.text ))")
-//        print("selectPray is :\(self.prayType)")
+        
+        //        print("prayNum:\(prayNum)")
+        //        print("prayDisplay's text:\(String(describing: prayDisplay!.text ))")
+        //        print("selectPray is :\(self.prayType)")
         
         let userDefaults: UserDefaults = UserDefaults.standard
         
