@@ -49,10 +49,10 @@ class HopeViewController: UITableViewController {
         return cell
     }
     
-    @IBAction func closeHopeDetailView(segue:UIStoryboardSegue){
-        //        dismiss(animated: true, completion: nil)
-        
-    }
+//    @IBAction func closeHopeDetailView(segue:UIStoryboardSegue){
+//        //        dismiss(animated: true, completion: nil)
+//        
+//    }
     
     //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     //        selectPray = hopes[indexPath.row].label

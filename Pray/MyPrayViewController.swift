@@ -10,6 +10,7 @@ import UIKit
 
 class MyPrayViewController: UITableViewController {
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,17 +33,22 @@ class MyPrayViewController: UITableViewController {
         return hopesData.count
     }
     
+
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyPrayCell", for: indexPath)
         let myPray = hopesData[indexPath.row].name
+        let myPrayNum  = hopesData[indexPath.row].count
         cell.textLabel?.text = myPray
-        cell.detailTextLabel?.text = myPray
+        cell.detailTextLabel?.text = String(myPrayNum)
+        
         
         // Configure the cell...
         
         return cell
     }
+    
     
     
     /*
