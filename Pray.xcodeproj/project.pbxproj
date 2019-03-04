@@ -55,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC39B0BB22252F68001E7856 /* Pray.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pray.entitlements; sourceTree = "<group>"; };
 		DC9D300C221AA90100F64EC8 /* StoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreData.swift; sourceTree = "<group>"; };
 		DC9D300E221AC20B00F64EC8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		DCFF8FC82211609C005B381C /* MyPrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPrayViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +141,7 @@
 		EED596DC21A2C891003CFCDB /* Pray */ = {
 			isa = PBXGroup;
 			children = (
+				DC39B0BB22252F68001E7856 /* Pray.entitlements */,
 				EED596DD21A2C891003CFCDB /* AppDelegate.swift */,
 				EED596DF21A2C891003CFCDB /* ViewController.swift */,
 				EE8DBC8521A65008005DC8BD /* HopeViewController.swift */,
@@ -280,6 +282,11 @@
 				TargetAttributes = {
 					EED596D921A2C891003CFCDB = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+						};
 					};
 					EED596ED21A2C892003CFCDB = {
 						CreatedOnToolsVersion = 10.1;
@@ -540,6 +547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pray/Pray.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PK2W43GWT6;
 				INFOPLIST_FILE = Pray/Info.plist;
@@ -547,7 +555,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.163.boyboby.Pray;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codery.Belief;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,6 +566,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pray/Pray.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PK2W43GWT6;
 				INFOPLIST_FILE = Pray/Info.plist;
@@ -565,7 +574,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.163.boyboby.Pray;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codery.Belief;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
